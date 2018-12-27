@@ -1,5 +1,5 @@
 package xyz.godi.budgetmanager.utils
 
-// Constants used in the app
+// Constants values used through the app
 
 const val DATABASE_NAME = "expense-db"

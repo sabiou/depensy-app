@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import xyz.godi.budgetmanager.databinding.FragmentHomeBinding
 
 /**
@@ -25,8 +26,8 @@ class HomeFragment : Fragment() {
         // set create budget onClick listener
         binding.createBudgetButton.setOnClickListener { v: View ->
             // navigate to create budget fragment
+            v.findNavController().navigate(R.id.action_homeFragment_to_createBudgetFragment)
         }
-
         return binding.root
     }
 }

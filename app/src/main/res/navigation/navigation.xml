@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="xyz.godi.budgetmanager.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_createBudgetFragment"
+            app:destination="@id/createBudgetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createBudgetFragment"
+        android:name="xyz.godi.budgetmanager.CreateBudgetFragment"
+        android:label="CreateBudget"
+        tools:layout="@layout/fragment_create_budget"/>
+
+
+</navigation>
