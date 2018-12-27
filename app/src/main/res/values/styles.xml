@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorPrimaryLight</item>
+        <item name="android:fontFamily">@font/nunito_sans</item>
 
         <!-- New MaterialComponents attributes. -->
         <item name="scrimBackground">@color/mtrl_scrim_color</item>

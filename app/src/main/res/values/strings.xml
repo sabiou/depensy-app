@@ -6,4 +6,10 @@
     <string name="create_new_budget">Create new budget</string>
     <string name="add_transaction">New transaction</string>
     <string name="create_budget">Create new budget</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="name">Name</string>
+    <string name="amount">Amount</string>
+    <string name="add_budget">Add budget</string>
+
 </resources>
