@@ -10,6 +10,11 @@ import androidx.room.Query
 @Dao
 interface BudgetDAO {
 
+    // select all budget from database
     @Query("SELECT * FROM budget ORDER BY name")
     fun getBudgets(): LiveData<List<Budget>>
+
+    // select by id
+    @Query("SELECT * FROM budget WHERE id= :budgetId")
+    fun getBudget(budgetId: String) : LiveData<Budget>
 }

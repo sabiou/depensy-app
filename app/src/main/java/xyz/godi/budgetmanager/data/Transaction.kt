@@ -7,7 +7,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 /**
- * Data class for Transactions
+ * Data class for Transaction.
  */
 
 @Entity(tableName = "transaction")
