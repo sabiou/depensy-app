@@ -1,4 +1,4 @@
-package xyz.godi.budgetmanager.Utils
+package xyz.godi.budgetmanager.data
 
 import androidx.room.TypeConverter
 import java.util.*

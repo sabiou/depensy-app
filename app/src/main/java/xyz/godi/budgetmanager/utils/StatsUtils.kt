@@ -1,4 +1,4 @@
-package xyz.godi.budgetmanager.Utils
+package xyz.godi.budgetmanager.utils
 
 /**
  * *Utilities class

@@ -5,6 +5,10 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
+/**
+ * Data class for Budgets
+ */
+
 @Entity(tableName = "budget")
 data class Budget (
         @PrimaryKey @ColumnInfo(name = "id") val budgetId : String,
