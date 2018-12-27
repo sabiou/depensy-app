@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BudgetManager</string>
+
+    <string name="transaction">Transaction</string>
+    <string name="budget">Budget</string>
+    <string name="create_new_budget">Create new budget</string>
+    <string name="add_transaction">New transaction</string>
+    <string name="create_budget">Create new budget</string>
 </resources>
