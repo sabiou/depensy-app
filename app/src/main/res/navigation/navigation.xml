@@ -3,29 +3,4 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/welcomeFragment">
-
-    <fragment
-        android:id="@+id/welcomeFragment"
-        android:name="xyz.godi.budgetmanager.WelcomeFragment"
-        android:label="Budgetify"
-        tools:layout="@layout/fragment_welcome"/>
-
-    <fragment
-        android:id="@+id/aboutFragment"
-        android:name="xyz.godi.budgetmanager.AboutFragment"
-        android:label="About"
-        tools:layout="@layout/fragment_about" />
-    <fragment
-        android:id="@+id/settingsFragment"
-        android:name="xyz.godi.budgetmanager.SettingsFragment"
-        android:label="Settings"
-        tools:layout="@layout/fragment_settings" />
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="xyz.godi.budgetmanager.HomeFragment"
-        android:label="Home"
-        tools:layout="@layout/fragment_home" />
-
-
-</navigation>
+    app:startDestination="@id/welcomeFragment"/>
