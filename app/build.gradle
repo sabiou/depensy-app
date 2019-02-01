@@ -46,8 +46,6 @@ dependencies {
     implementation deps.androidX.constraintLayout
     implementation deps.androidX.lifecycle.compiler
     implementation deps.androidX.room.compiler
-    implementation deps.google.dagger.compiler
-    implementation deps.google.dagger.androidProcessor
     testImplementation deps.jUnit
     androidTestImplementation deps.androidX.test.runner
     // androidTestImplementation deps.androidX.test.espresso.core

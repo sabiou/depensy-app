@@ -32,10 +32,12 @@ android {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
         implementation deps.kotlin.stdlib
         implementation deps.androidX.constraintLayout
+        implementation deps.google.dagger.compiler
+        implementation deps.google.dagger.androidProcessor
 
         testApi 'junit:junit:4.12'
-        androidTestApi 'com.android.support.test:runner:1.0.2'
-        androidTestApi 'com.android.support.test.espresso:espresso-core:3.0.2'
+        androidTestImplementation 'com.android.support.test:runner:1.0.2'
+        androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     }
 
 }
