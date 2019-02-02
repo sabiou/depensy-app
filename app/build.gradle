@@ -41,7 +41,7 @@ android {
 
 dependencies {
     implementation deps.kotlin.stdlib
-    implementation project(path: ':core', configuration: 'default')
+    implementation project(configuration: 'default', path: ':core1')
 
     implementation deps.androidX.constraintLayout
     implementation deps.androidX.lifecycle.compiler
