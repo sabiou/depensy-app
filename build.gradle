@@ -49,6 +49,7 @@ buildscript {
                     stdlib: "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin",
                     gradlePlugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
             ],
+
             androidX: [
                     constraintLayout: "androidx.constraintlayout:constraintlayout:$versions.androidX.constraintLayout",
                     recyclerView: "androidx.recyclerview:recyclerview:$versions.androidX.recyclerView",
@@ -72,7 +73,9 @@ buildscript {
                     ],
                     room: [
                             runtime: "androidx.room:room-runtime:$versions.androidX.room",
-                            compiler: "androidx.room:room-compiler:$versions.androidX.room"
+                            compiler: "androidx.room:room-compiler:$versions.androidX.room",
+                            common: "androidx.room:room-common:$versions.androidX.room"
+
                     ],
                     paging: [
                             runtimeKtx: "androidx.paging:paging-runtime-ktx:$versions.androidX.paging"
