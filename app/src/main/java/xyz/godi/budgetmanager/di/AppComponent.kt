@@ -1,4 +1,4 @@
-package xyz.godi.core.di
+package xyz.godi.budgetmanager.di
 
 import android.app.Application
 import dagger.BindsInstance
