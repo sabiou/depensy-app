@@ -45,7 +45,8 @@ dependencies {
     implementation project(':expenses')
     implementation deps.androidX.constraintLayout
 
-    kapt deps.androidX.lifecycle.compiler
+    implementation deps.androidX.lifecycle.compiler
+    implementation deps.androidX.lifecycle.extensions
     kapt deps.androidX.room.compiler
     implementation deps.androidX.room.runtime
 
