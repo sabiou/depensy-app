@@ -29,6 +29,9 @@ dependencies {
     implementation deps.androidX.constraintLayout
     implementation deps.google.dagger.compiler
     implementation deps.google.dagger.androidProcessor
+    implementation deps.androidX.lifecycle.extensions
+    implementation deps.androidX.room.runtime
+    implementation deps.google.material
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
