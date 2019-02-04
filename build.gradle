@@ -1,7 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-
     ext.versions = [
             compileSdk: 28,
             minSdk: 21,
@@ -25,10 +24,9 @@ buildscript {
                     paging: '2.1.0',
                     navigation: '1.0.0-alpha08', // BUG: This can't be updated until https://issuetracker.google.com/issues/121304903 is fixed
                     work: '1.0.0-beta03',
-
                     test: [
-                            runner: '1.1.1',
-                            espreso: '3.1.1'
+                            runner: '1.1.2-alpha01',
+                            espresso: '3.1.2-alpha01'
                     ]
             ],
             google: [
@@ -49,7 +47,6 @@ buildscript {
                     stdlib: "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin",
                     gradlePlugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
             ],
-
             androidX: [
                     constraintLayout: "androidx.constraintlayout:constraintlayout:$versions.androidX.constraintLayout",
                     recyclerView: "androidx.recyclerview:recyclerview:$versions.androidX.recyclerView",
@@ -73,9 +70,7 @@ buildscript {
                     ],
                     room: [
                             runtime: "androidx.room:room-runtime:$versions.androidX.room",
-                            compiler: "androidx.room:room-compiler:$versions.androidX.room",
-                            common: "androidx.room:room-common:$versions.androidX.room"
-
+                            compiler: "androidx.room:room-compiler:$versions.androidX.room"
                     ],
                     paging: [
                             runtimeKtx: "androidx.paging:paging-runtime-ktx:$versions.androidX.paging"
@@ -122,6 +117,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.0'
+        classpath deps.androidGradlePlugin
         classpath deps.kotlin.gradlePlugin
         classpath deps.androidX.navigation.safeArgsGradlePlugin
         classpath deps.google.ossLicenses.gradlePlugin
