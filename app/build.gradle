@@ -17,10 +17,6 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    dataBinding {
-        enabled = true
-    }
-
     buildTypes {
         release {
             minifyEnabled true
@@ -33,26 +29,21 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
-    androidExtensions {
-        experimental = true
-    }
 }
 
 dependencies {
     implementation deps.kotlin.stdlib
     implementation project(':core')
     implementation project(':expenses')
-    implementation deps.androidX.constraintLayout
 
-    implementation deps.androidX.lifecycle.compiler
-    implementation deps.androidX.lifecycle.extensions
+    implementation deps.androidX.constraintLayout
+    kapt deps.androidX.lifecycle.compiler
     kapt deps.androidX.room.compiler
     implementation deps.androidX.room.runtime
 
-    implementation deps.androidX.room.common
-    implementation deps.google.dagger.compiler
-    implementation deps.google.dagger.androidProcessor
+    kapt deps.google.dagger.compiler
+    kapt deps.google.dagger.androidProcessor
+
     testImplementation deps.jUnit
     androidTestImplementation deps.androidX.test.runner
 }
