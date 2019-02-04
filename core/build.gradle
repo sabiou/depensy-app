@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion versions.compileSdk
@@ -7,33 +8,38 @@ android {
         minSdkVersion versions.minSdk
         targetSdkVersion versions.targetSdk
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner deps.androidX.test.instrumentationRunner
 
     }
-
-    buildTypes {
-        release {
-            minifyEnabled true
-            proguardFile 'proguard-rules.pro'
-        }
 
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_1_8
             targetCompatibility JavaVersion.VERSION_1_8
         }
     }
-}
 
 dependencies {
     implementation deps.kotlin.stdlib
+    implementation deps.androidX.core.ktx
+    implementation deps.androidX.activity.ktx
+    implementation deps.androidX.fragment.ktx
     implementation deps.androidX.constraintLayout
-    implementation deps.google.dagger.compiler
-    implementation deps.google.dagger.androidProcessor
+    implementation deps.androidX.recyclerView
+    implementation deps.androidX.emoji.emoji
+    implementation deps.androidX.emoji.bundled
     implementation deps.androidX.lifecycle.extensions
     implementation deps.androidX.room.runtime
+    implementation deps.androidX.paging.runtimeKtx
+    implementation deps.androidX.navigation.uiKtx
+    implementation deps.androidX.navigation.fragmentKtx
+    implementation deps.androidX.work.runtimeKtx
     implementation deps.google.material
-
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation deps.google.dagger.dagger
+    implementation deps.google.dagger.android
+    implementation deps.google.dagger.androidSupport
+    implementation deps.retrofit.retrofit
+    implementation deps.retrofit.gsonConverter
+    testImplementation deps.jUnit
+    androidTestImplementation deps.androidX.test.runner
+    androidTestImplementation deps.androidX.test.espresso.core
 }
