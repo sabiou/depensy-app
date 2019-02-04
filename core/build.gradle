@@ -11,7 +11,6 @@ android {
         testInstrumentationRunner deps.androidX.test.instrumentationRunner
 
     }
-
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_1_8
             targetCompatibility JavaVersion.VERSION_1_8
@@ -19,26 +18,28 @@ android {
     }
 
 dependencies {
-    implementation deps.kotlin.stdlib
-    implementation deps.androidX.core.ktx
-    implementation deps.androidX.activity.ktx
-    implementation deps.androidX.fragment.ktx
-    implementation deps.androidX.constraintLayout
-    implementation deps.androidX.recyclerView
-    implementation deps.androidX.emoji.emoji
-    implementation deps.androidX.emoji.bundled
-    implementation deps.androidX.lifecycle.extensions
-    implementation deps.androidX.room.runtime
-    implementation deps.androidX.paging.runtimeKtx
-    implementation deps.androidX.navigation.uiKtx
-    implementation deps.androidX.navigation.fragmentKtx
-    implementation deps.androidX.work.runtimeKtx
-    implementation deps.google.material
-    implementation deps.google.dagger.dagger
-    implementation deps.google.dagger.android
-    implementation deps.google.dagger.androidSupport
-    implementation deps.retrofit.retrofit
-    implementation deps.retrofit.gsonConverter
+    api deps.kotlin.stdlib
+    api deps.androidX.core.ktx
+    api deps.androidX.activity.ktx
+    api deps.androidX.fragment.ktx
+    api deps.androidX.constraintLayout
+    api deps.androidX.recyclerView
+    api deps.androidX.emoji.emoji
+    api deps.androidX.emoji.bundled
+    api deps.androidX.lifecycle.extensions
+    api deps.androidX.room.runtime
+    api deps.androidX.paging.runtimeKtx
+    api deps.androidX.navigation.uiKtx
+    api deps.androidX.navigation.fragmentKtx
+    api deps.androidX.work.runtimeKtx
+    api deps.google.material
+
+    api deps.google.dagger.dagger
+    api deps.google.dagger.android
+    api deps.google.dagger.androidSupport
+
+    api deps.retrofit.retrofit
+    api deps.retrofit.gsonConverter
     testImplementation deps.jUnit
     androidTestImplementation deps.androidX.test.runner
     androidTestImplementation deps.androidX.test.espresso.core
