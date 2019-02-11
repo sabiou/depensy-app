@@ -1,11 +1,10 @@
-
 #
 # Build configuration for Circle CI
 #
 version: 2
 jobs:
   build:
-    working_directory: ~/Expense-manager
+    working_directory: /home/godixyz/Bureau/learning-kotlin/Expense-manager
     docker:
     - image: circleci/android:api-28-alpha
     environment:
