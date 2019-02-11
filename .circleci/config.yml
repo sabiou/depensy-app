@@ -4,7 +4,7 @@
 version: 2
 jobs:
   build:
-    working_directory: /home/godixyz/Bureau/learning-kotlin/Expense-manager
+    working_directory: ~/Expense-manager
     docker:
     - image: circleci/android:api-28-alpha
     environment:
