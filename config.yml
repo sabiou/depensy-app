@@ -1,0 +1,22 @@
+
+#
+# Build configuration for Circle CI
+#
+
+general:
+  artifacts:
+  - /home/ubuntu/Expense-manager/app/build/outputs/apk/
+
+machine:
+  environment:
+    ANDROID_HOME: /home/godixyz/Android/Sdk
+
+dependencies:
+  override:
+  - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-28,android-28,extra-google-m2repository,extra-google-google_play_services,extra-android-support
+  - ANDROID_HOME=/home/godixyz/Android/Sdk ./gradlew dependencies
+
+test:
+  override:
+  - (./gradlew assemble):
+timeout: 360
