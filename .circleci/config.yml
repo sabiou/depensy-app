@@ -7,7 +7,7 @@ jobs:
   build:
     working_directory: ~/Expense-manager
     docker:
-    - image: circleci/android:api-28
+    - image: circleci/android:api-28-alpha
     environment:
       JVM_OPTS: -Xmx4g
     steps:
