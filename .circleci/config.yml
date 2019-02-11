@@ -24,9 +24,6 @@ jobs:
         path: app/build/reports
         destination: reports
     - run:
-        name: Run lint
-        command: ./gradlew lintDebug
-    - run:
         name: Run unit tests
         command: ./gradlew testDebugUnitTest
     - store_artifacts:
