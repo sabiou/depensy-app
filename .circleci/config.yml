@@ -2,21 +2,39 @@
 #
 # Build configuration for Circle CI
 #
-
-general:
-  artifacts:
-  - /home/ubuntu/Expense-manager/app/build/outputs/apk/
-
-machine:
-  environment:
-    ANDROID_HOME: /home/godixyz/Android/Sdk
-
-dependencies:
-  override:
-  - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-28,android-28,extra-google-m2repository,extra-google-google_play_services,extra-android-support
-  - ANDROID_HOME=/home/godixyz/Android/Sdk ./gradlew dependencies
-
-test:
-  override:
-  - (./gradlew assemble):
-timeout: 360
+version: 2
+jobs:
+  build:
+    working_directory: ~/Expense-manager
+    docker:
+    - image: circleci/android:api-28
+    environment:
+      JVM_OPTS: -Xmx4g
+    steps:
+    - checkout
+    - restore_cache:
+        key: gradle-{{ checksum "build.gradle" }}
+    - run:
+        name: Download dependencies
+        command: ./gradlew androidDependencies
+    - save_cache:
+        paths:
+        - ~/.gradle
+        key: gradle-{{ checksum "build.gradle" }}
+    - run:
+        name: Run ktlint
+        command: ./gradlew ktlint
+    - store_artifacts:
+        path: app/build/reports
+        destination: reports
+    - run:
+        name: Run lint
+        command: ./gradlew lintDebug
+    - run:
+        name: Run unit tests
+        command: ./gradlew testDebugUnitTest
+    - store_artifacts:
+        path: app/build/reports
+        destination: reports
+    - store_test_results:
+path: app/build/test-results
