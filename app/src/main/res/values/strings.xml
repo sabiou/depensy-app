@@ -13,11 +13,15 @@
     <string name="add_budget">Add budget</string>
     <string name="about">About</string>
     <string name="settings">Settings</string>
+    <string name="expenses">Expenses</string>
 
     <string name="enable_notifications">Enable notifications</string>
     <string name="build_version">Build version</string>
     <string name="notifications">Notifications</string>
 
-    <string name="home">Home</string>
+    <string name="add_expense">Add expense</string>
+    <string name="overview">Overview</string>
+    <string name="stats">Stats</string>
+    <string name="info">Info</string>
 
 </resources>
