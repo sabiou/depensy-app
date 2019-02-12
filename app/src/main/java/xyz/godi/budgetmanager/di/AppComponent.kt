@@ -1,9 +1,9 @@
 package xyz.godi.budgetmanager.di
 
 import android.app.Application
-import androidx.core.view.KeyEventDispatcher
 import dagger.BindsInstance
 import dagger.Component
+import xyz.godi.budgetmanager.ExpensesManagerApplication
 
 @Component(modules = [AppModule::class])
 interface AppComponent {
@@ -13,6 +13,8 @@ interface AppComponent {
         @BindsInstance
         fun application(application: Application): Builder
 
-        fun Build(): AppComponent
+        fun build(): AppComponent
     }
+
+    fun inject(expensesManagerApplication: ExpensesManagerApplication)
 }
