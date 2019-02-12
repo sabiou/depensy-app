@@ -3,11 +3,10 @@ package xyz.godi.budgetmanager.di
 import android.app.Application
 import android.content.Context
 import androidx.room.Room
-import androidx.room.RoomDatabase
 import dagger.Module
 import dagger.Provides
 import xyz.godi.budgetmanager.db.ExpensesDb
-import xyz.godi.expenses.db.DailyExpenseDao
+import xyz.godi.budgetmanager.expenses.db.DailyExpenseDao
 import java.util.concurrent.Executor
 import java.util.concurrent.Executors
 import javax.inject.Singleton
