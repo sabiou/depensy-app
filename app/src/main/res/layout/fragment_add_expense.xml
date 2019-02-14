@@ -40,6 +40,7 @@
         style="@style/ExpenseManagerTextInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descriptionEdtxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textNoSuggestions"
@@ -54,6 +55,7 @@
         style="@style/ExpenseManagerTextInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountInputEdtxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -62,8 +64,8 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonAddNewExpense"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_gravity="center"
