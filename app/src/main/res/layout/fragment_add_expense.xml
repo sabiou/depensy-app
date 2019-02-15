@@ -67,8 +67,9 @@
         android:id="@+id/buttonAddNewExpense"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:layout_gravity="center"
-        android:text="@string/add_expense" />
+        android:layout_margin="10dp"
+        android:text="@string/add_expense"
+        app:backgroundTint="@color/color_secondary" />
 
 </LinearLayout>
