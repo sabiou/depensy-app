@@ -9,19 +9,28 @@
     <string name="start_date">Start date</string>
     <string name="end_date">End date</string>
     <string name="name">Name</string>
-    <string name="amount">Amount</string>
     <string name="add_budget">Add budget</string>
     <string name="about">About</string>
     <string name="settings">Settings</string>
     <string name="expenses">Expenses</string>
 
+
+    <string name="add_a_new_expense">Add a new expense</string>
+    <string name="hint_expense_description">Description</string>
+    <string name="add_expense">Add expense</string>
+
     <string name="enable_notifications">Enable notifications</string>
     <string name="build_version">Build version</string>
     <string name="notifications">Notifications</string>
 
-    <string name="add_expense">Add expense</string>
     <string name="overview">Overview</string>
     <string name="stats">Stats</string>
     <string name="info">Info</string>
+
+    <string name="total_spent_today">Total spent today</string>
+    <string name="latest_expenses">Latest expenses</string>
+    <string name="see_all">See All</string>
+    <string name="home">Home</string>
+    <string name="amount">Amount</string>
 
 </resources>
