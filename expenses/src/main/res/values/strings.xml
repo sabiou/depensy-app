@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Expense-manager</string>
+
+    <string name="add_a_new_expense">Add a new expense</string>
+    <string name="hint_expense_description">Description</string>
+    <string name="add_expense">Add expense</string>
+    <string name="amount">Amount</string>
+
 </resources>
