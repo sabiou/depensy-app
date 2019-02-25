@@ -9,11 +9,14 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="xyz.godi.budgetmanager.ui.HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <argument android:name="expense" app:argType="xyz.godi.budgetmanager.expenses.vo.Expense"/>
+
+    </fragment>
 
     <fragment
         android:id="@+id/newExpenseFragment"
-        android:name="xyz.godi.budgetmanager.ui.NewExpenseFragment"
+        android:name="xyz.godi.budgetmanager.expenses.ui.NewExpenseFragment"
         android:label="Add Expense"
         tools:layout="@layout/fragment_add_expense" />
     <fragment
