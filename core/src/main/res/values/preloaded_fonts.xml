@@ -3,4 +3,9 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/rajdhani</item>
     </array>
+
+    <array name="preloaded_fonts_nunito" translatable="false">
+        <item>@font/nunito_sans</item>
+    </array>
+
 </resources>
