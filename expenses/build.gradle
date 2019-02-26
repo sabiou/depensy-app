@@ -24,10 +24,10 @@ android {
 }
 
 dependencies {
-    implementation deps.kotlin.stdlib
     implementation project(':core')
+    implementation deps.kotlin.stdlib
     implementation deps.androidX.room.runtime
-    implementation deps.androidX.lifecycle.compiler
+    annotationProcessor deps.androidX.lifecycle.compiler
     implementation deps.androidX.lifecycle.extensions
     kapt deps.androidX.room.compiler
     testImplementation deps.jUnit
