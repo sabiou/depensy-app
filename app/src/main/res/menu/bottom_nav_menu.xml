@@ -3,17 +3,17 @@
 
     <item
         android:id="@+id/homeFragment"
-        android:icon="@drawable/ic_home"
-        android:title="@string/home" />
+        android:title="@string/overview"
+        android:icon="@drawable/ic_account_balance" />
 
     <item
-        android:id="@+id/createBudgetFragment"
-        android:title="@string/add_budget"
-        android:icon="@drawable/ic_budget" />
+        android:id="@+id/statsFragment"
+        android:icon="@drawable/ic_show_chart"
+        android:title="@string/stats" />
 
     <item
-        android:id="@+id/addTransactionFragment"
-        android:icon="@drawable/ic_transaction"
-        android:title="@string/add_transaction" />
+        android:id="@+id/infoFragment"
+        android:icon="@drawable/ic_info"
+        android:title="@string/info" />
 
 </menu>
