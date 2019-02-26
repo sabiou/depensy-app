@@ -35,8 +35,8 @@ dependencies {
     implementation deps.kotlin.stdlib
     implementation project(':core')
     implementation project(':expenses')
+    implementation project(':info')
 
-    implementation deps.androidX.constraintLayout
     kapt deps.androidX.lifecycle.compiler
     kapt deps.androidX.room.compiler
     implementation deps.androidX.room.runtime
@@ -46,4 +46,5 @@ dependencies {
 
     testImplementation deps.jUnit
     androidTestImplementation deps.androidX.test.runner
+    annotationProcessor deps.androidX.lifecycle.compiler
 }
