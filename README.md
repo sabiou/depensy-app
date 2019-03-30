@@ -13,5 +13,5 @@
 Depensy :moneybag: is a work-in progress simple budget management app - features latest android technologies.
 
 #### Contributors
-[Farouk](https://github.com/sabiou) : Project manager / dev
-[Zularizal](https://github.com/zularizal) : Designer
+* [Farouk](https://github.com/sabiou) : Project manager / dev
+* [Zularizal](https://github.com/zularizal) : Designer
