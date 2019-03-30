@@ -14,6 +14,8 @@ buildscript {
             jUnit: '4.12',
             ktlint: '0.29.0',
             koin: '1.0.2',
+            materialDialogs: '2.1.0',
+            androidChart: 'v3.1.0',
 
             androidX: [
                     core: '1.1.0-alpha04',
@@ -40,13 +42,14 @@ buildscript {
                             ossLicenses: '16.0.2',
                             gradlePlugin: '0.9.4'
                     ]
-            ]
+            ],
     ]
 
     ext.deps = [
             androidGradlePlugin: "com.android.tools.build:gradle:$versions.androidGradlePlugin",
             jUnit: "junit:junit:$versions.jUnit",
             ktlint: "com.github.shyiko:ktlint:$versions.ktlint",
+            dialogs: "com.afollestad.material-dialogs:core:$versions.materialDialogs",
             kotlin: [
                     stdlib: "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin.kotlin",
                     gradlePlugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin.kotlin",
@@ -116,11 +119,14 @@ buildscript {
                     koin: "org.koin:koin-android:$versions.koin",
                     viewModel: "org.koin:koin-android-viewmodel:$versions.koin"
             ],
+
+            chart: "com.github.PhilJay:MPAndroidChart:$versions.androidChart"
     ]
 
     repositories {
         google()
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
     dependencies {
         classpath deps.androidGradlePlugin
