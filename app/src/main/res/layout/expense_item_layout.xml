@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:layout_margin="8dp"
+    android:focusable="true"
+    style="@style/ExpenseManagerCardView"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:contentPadding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/expenseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:textAppearance="@style/ExpenseManagerTextAppearance.Headline6"
+            app:layout_constraintStart_toStartOf="parent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/color_primary"
+            tools:text="Mobile data bundle" />
+
+        <TextView
+            android:id="@+id/expenseAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:textAppearance="@style/ExpenseManagerTextAppearance.Headline6"
+            android:textColor="@color/expense_manager_red"
+            app:layout_constraintStart_toEndOf="@+id/expenseName"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="600" />
+
+        <TextView
+            android:id="@+id/cfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/fcfa"
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            android:textColor="@color/expense_manager_red"
+            app:layout_constraintStart_toEndOf="@+id/expenseAmount"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/transaction"
+        app:srcCompat="@drawable/ic_arrow_transaction" />
+
+</com.google.android.material.card.MaterialCardView>
