@@ -79,3 +79,8 @@ Libraries Used
 #### Contributors
 * [Farouk](https://github.com/sabiou) : Project manager / dev
 * [Zularizal](https://github.com/zularizal) : Designer
+
+## License
+<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">
+  <img alt="Apache License 2.0" src="screenshots/apache.png" height="110"/>
+</a>
