@@ -82,5 +82,5 @@ Libraries Used
 
 ## License
 <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">
-  <img alt="Apache License 2.0" src="screenshots/apache.png" height="110"/>
+  <img alt="Apache License 2.0" src="readme/apache.png" height="110"/>
 </a>
