@@ -5,7 +5,7 @@
 [![API](https://img.shields.io/badge/API-28%2B-brightgreen.svg?style=flat-square)](https://android-arsenal.com/api?level=28)
 
 <h1 align=center>
-<img src="logo/horizontal.png" width=60%>
+<img src="logo/vertical.png" width=40%>
 </h1>
 
 Expense-manager :moneybag: is a work-in progress simple budget management app - features latest android technologies.
