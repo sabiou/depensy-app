@@ -45,7 +45,7 @@ class NewExpenseFragment : Fragment() {
             val amount = Integer.parseInt(amountEdtxt.text.toString())
             val expense = Expense(description = description, amount = amount)
             viewModel.addExpense(expense)
-            // show Snackbar
+            // show snackbar
             Snackbar.make(view, "Expense $description added", Snackbar.LENGTH_SHORT).show()
         }
 
