@@ -18,7 +18,6 @@ This app is build following the diagram bellow. To learn more about this [archit
 ![Login feature navigation graph](https://github.com/sabiou/depensy/blob/master/readme/depensy-architecture.png)
 
 ### Getting Started
----------------
 Follow these steps if you want to get a local copy of the project.
 
 ###### Prerequisites
@@ -40,13 +39,12 @@ For more resources on learning Android development, visit the
 [Developer Guides](https://developer.android.com/guide/) at
 [developer.android.com](https://developer.android.com).
 
-Screenshots
+#### Screenshots
 -----------
 
 (Coming soon...)
 
 #### Libraries Used
---------------
 * [Foundation][0] - Components for core system capabilities, Kotlin extensions and support for
   multidex and automated testing.
   * [AppCompat][1] - Degrade gracefully on older versions of Android.
