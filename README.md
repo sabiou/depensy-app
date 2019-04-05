@@ -15,7 +15,7 @@ Depensy :moneybag: is a work-in progress simple budget management app - features
 ## Architecture
 This app is build following the diagram bellow. To learn more about this [architecture](https://developer.android.com/jetpack/docs/guide#separation-of-concerns)
 
-![Login feature navigation graph](https://github.com/sabiou/depensy/blob/master/readme/Soc.png)
+![Login feature navigation graph](https://github.com/sabiou/depensy/blob/master/readme/depensy-architecture.png)
 
 Getting Started
 ---------------
