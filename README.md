@@ -12,12 +12,12 @@
 
 Depensy :moneybag: is a work-in progress simple budget management app - features latest android technologies.
 
-## Architecture
+### Architecture
 This app is build following the diagram bellow. To learn more about this [architecture](https://developer.android.com/jetpack/docs/guide#separation-of-concerns)
 
 ![Login feature navigation graph](https://github.com/sabiou/depensy/blob/master/readme/depensy-architecture.png)
 
-Getting Started
+### Getting Started
 ---------------
 Follow these steps if you want to get a local copy of the project.
 
@@ -45,7 +45,7 @@ Screenshots
 
 (Coming soon...)
 
-Libraries Used
+#### Libraries Used
 --------------
 * [Foundation][0] - Components for core system capabilities, Kotlin extensions and support for
   multidex and automated testing.
@@ -94,7 +94,7 @@ Libraries Used
 * [Farouk](https://github.com/sabiou) : Project manager / dev
 * [Zularizal](https://github.com/zularizal) : Designer
 
-## License
+#### License
 <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">
   <img alt="Apache License 2.0" src="readme/apache.png" height="110"/>
 </a>
