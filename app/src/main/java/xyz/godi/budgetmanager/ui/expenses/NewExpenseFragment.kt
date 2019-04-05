@@ -9,12 +9,19 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.fragment_add_expense.*
+import kotlinx.android.synthetic.main.fragment_home.*
 import xyz.godi.budgetmanager.R
 import xyz.godi.budgetmanager.data.ExpenseDatabase
 import xyz.godi.budgetmanager.databinding.FragmentAddExpenseBinding
 import xyz.godi.budgetmanager.factory.NewExpenseViewModelFactory
+import xyz.godi.budgetmanager.utils.InjectorsUtils
+import xyz.godi.budgetmanager.vo.Expense
 
 class NewExpenseFragment : Fragment() {
+
+    lateinit var viewModel: NewExpenseViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -22,13 +29,9 @@ class NewExpenseFragment : Fragment() {
         val binding: FragmentAddExpenseBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_add_expense, container, false)
 
-        val application = requireNotNull(this.activity!!).application
+        val viewModelFactory = NewExpenseViewModelFactory(InjectorsUtils.getExpenseRepository(requireActivity()))
 
-        val datasource = ExpenseDatabase.getInstance(application).expenseDao
-
-        val viewModelFactory = NewExpenseViewModelFactory(application, datasource)
-
-        val viewModel = ViewModelProviders.of(this, viewModelFactory)
+        viewModel = ViewModelProviders.of(this, viewModelFactory)
                 .get(NewExpenseViewModel::class.java)
 
         // set the view viewModel
@@ -37,20 +40,14 @@ class NewExpenseFragment : Fragment() {
         // set the view lifecycle owner
         binding.lifecycleOwner = this
 
-        // observer for fields
-        viewModel.expenseDescription.observe(this, Observer {
-            if (it.text.isNullOrEmpty()) {
-                it.error = "Enter a valid description"
-                it.requestFocus()
-            }
-        })
-
-        viewModel.amount.observe(this, Observer {
-            if (it.text.isNullOrEmpty()) {
-                it.error = "Invalid amount"
-                it.requestFocus()
-            }
-        })
+        binding.buttonAddNewExpense.setOnClickListener { view ->
+            val description = descriptionEdtxt.text.toString()
+            val amount = Integer.parseInt(amountEdtxt.text.toString())
+            val expense = Expense(description = description, amount = amount)
+            viewModel.addExpense(expense)
+            // show Snackbar
+            Snackbar.make(view, "Expense $description added", Snackbar.LENGTH_SHORT).show()
+        }
 
         return binding.root
     }
