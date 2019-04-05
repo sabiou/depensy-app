@@ -2,7 +2,7 @@
 
 #### (Project still in early stage!!!)
 
-[bitrise](https://app.bitrise.io/app/1394cf788ff01b75/status.svg?token=qFItOXE6VH1TER-CknMbIQ&branch=master)
+[!bitrise](https://app.bitrise.io/app/1394cf788ff01b75/status.svg?token=qFItOXE6VH1TER-CknMbIQ&branch=master)
 [![ktlint](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg)](https://ktlint.github.io/)
 [![API](https://img.shields.io/badge/API-28%2B-brightgreen.svg?style=flat-square)](https://android-arsenal.com/api?level=28)
 
