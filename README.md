@@ -19,8 +19,22 @@ This app is build following the diagram bellow. To learn more about this [archit
 
 Getting Started
 ---------------
-This project uses the Gradle build system. To build this project, use the
-`gradlew build` command or use "Import Project" in Android Studio.
+Follow these steps if you want to get a local copy of the project.
+
+###### Prerequisites
+*   Android Studio IDE 3.2+
+*   Android SDK v28
+*   Android Build Tools v28.0.3
+*   Gradle 4.10.1
+
+###### 1. Clone or fork the repository by running the command below
+```
+git https://github.com/sabiou/depensy.git
+```
+
+###### 2. Import the project in AndroidStudio
+1.  In Android Studio, go to File -> New -> Import project
+2.  Follow the dialog for set up instructions
 
 For more resources on learning Android development, visit the
 [Developer Guides](https://developer.android.com/guide/) at
