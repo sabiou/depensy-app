@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/filter"
+        android:id="@+id/filter"
+        android:icon="@drawable/ic_filter"
+        app:showAsAction="ifRoom"/>
+
+    <item android:title="@string/refresh"
+        android:id="@+id/refresh"
+        app:showAsAction="never"/>
+</menu>

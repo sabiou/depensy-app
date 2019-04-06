@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion versions.compileSdk
@@ -15,7 +16,11 @@ android {
             sourceCompatibility JavaVersion.VERSION_1_8
             targetCompatibility JavaVersion.VERSION_1_8
         }
+
+    dataBinding {
+        enabled = true
     }
+}
 
 dependencies {
     api deps.kotlin.stdlib
@@ -36,9 +41,9 @@ dependencies {
     api deps.androidX.navigation.fragmentKtx
     api deps.androidX.work.runtimeKtx
     api deps.google.material
-    api deps.google.dagger.dagger
-    api deps.google.dagger.android
-    api deps.google.dagger.androidSupport
+    api deps.chart
+    api deps.androidX.preference.prefs
+    api deps.androidX.preference.ktx
 
     api deps.retrofit.retrofit
     api deps.retrofit.gsonConverter

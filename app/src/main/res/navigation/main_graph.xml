@@ -7,26 +7,44 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="xyz.godi.budgetmanager.screens.home.HomeFragment"
+        android:name="dev.farouk.depensy.ui.home.HomeFragment"
         android:label="HomeFragment"
         app:defaultNavHost="true"
-        tools:layout="@layout/fragment_home"/>
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_newExpenseFragment"
+            app:destination="@id/newExpenseFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_expensesFragment"
+            app:destination="@id/expensesFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/historyFragment"
-        android:name="xyz.godi.budgetmanager.screens.history.HistoryFragment"
-        android:label="HistoryFragment"
-        tools:layout="@layout/fragment_history"/>
+        android:name="dev.farouk.depensy.ui.history.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
 
     <fragment
         android:id="@+id/statsFragment"
-        android:name="xyz.godi.budgetmanager.screens.stats.StatsFragment"
-        android:label="StatsFragment"
-        tools:layout="@layout/fragment_stats"/>
+        android:name="dev.farouk.depensy.ui.stats.StatsFragment"
+        android:label="Stats"
+        tools:layout="@layout/fragment_stats" />
 
     <fragment
         android:id="@+id/infoFragment"
-        android:name="xyz.godi.budgetmanager.info.ui.InfoFragment"
-        android:label="InfoFragment"
-        tools:layout="@layout/fragment_info"/>
+        android:name="dev.farouk.depensy.info.ui.InfoFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/newExpenseFragment"
+        android:name="dev.farouk.depensy.ui.expenses.NewExpenseFragment"
+        android:label="Add Expense"
+        tools:layout="@layout/fragment_add_expense" />
+    <fragment
+        android:id="@+id/expensesFragment"
+        android:name="dev.farouk.depensy.ui.expenses.ExpensesFragment"
+        android:label="ExpensesFragment"
+        tools:layout="@layout/fragment_expenses_list"/>
+
 </navigation>

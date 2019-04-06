@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">About</string>
+    <string name="about_title">Expense manager</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="about_body"><![CDATA[
+        Designed &amp; developed by <b>Farouk Sabiou</b>.<br/>
+        <a href=\'https://twitter.com/sabiiou\'>Twitter</a>&nbsp;&nbsp;
+        <a href=\'https://github.com/sabiou\'>GitHub</a>&nbsp;&nbsp;
+        <a href=\'https://www.linkedin.com/in/farouksabiou\'>LinkedIn</a><br/><br/>
+        This project is <a href=\'https://github.com/sabiou/expense-manager\'>open source</a>, and is
+        licensed under Apache 2.0.
+  ]]></string>
+</resources>

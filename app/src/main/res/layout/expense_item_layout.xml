@@ -1,67 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:clickable="true"
-    android:layout_margin="8dp"
-    android:focusable="true"
-    style="@style/ExpenseManagerCardView"
-    android:foreground="?android:attr/selectableItemBackground"
-    app:contentPadding="16dp">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <data>
+        <variable
+            name="expense"
+            type="dev.farouk.depensy.data.Expense" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="100">
+        android:layout_height="90dp"
+        android:clickable="true"
+        android:layout_margin="16dp"
+        android:focusable="true"
+        app:cardCornerRadius="10dp"
+        android:elevation="0dp"
+        app:cardBackgroundColor="@color/expense_manager_green_light"
+        style="@style/ExpenseManagerCardView"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:contentPadding="16dp">
 
-        <TextView
-            android:id="@+id/expenseName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:textAppearance="@style/ExpenseManagerTextAppearance.Headline6"
-            app:layout_constraintStart_toStartOf="parent"
-            android:ellipsize="end"
-            android:maxLines="1"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textColor="@color/color_primary"
-            tools:text="Mobile data bundle" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100">
 
-        <TextView
-            android:id="@+id/expenseAmount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:textAppearance="@style/ExpenseManagerTextAppearance.Headline6"
-            android:textColor="@color/expense_manager_red"
-            app:layout_constraintStart_toEndOf="@+id/expenseName"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="600" />
+            <TextView
+                android:id="@+id/expenseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:textAppearance="@style/ExpenseManagerTextAppearance.Headline6"
+                app:layout_constraintStart_toStartOf="parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@{expense.description.toString()}"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/white"
+                tools:text="Mobile data bundle" />
 
-        <TextView
-            android:id="@+id/cfa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:layout_marginTop="1dp"
-            android:text="@string/fcfa"
-            android:textSize="12sp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-            android:textColor="@color/expense_manager_red"
-            app:layout_constraintStart_toEndOf="@+id/expenseAmount"
-            app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/expenseAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:textAppearance="@style/ExpenseManagerTextAppearance.Headline6"
+                android:textColor="@color/white"
+                android:text="@{expense.amount}"
+                app:layout_constraintStart_toEndOf="@+id/expenseName"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="600" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/cfa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="1dp"
+                android:text="@string/fcfa"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/expenseAmount"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/transaction"
-        app:srcCompat="@drawable/ic_arrow_transaction" />
+            <TextView
+                android:id="@+id/time"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/icon_time"
+                app:layout_constraintTop_toBottomOf="@+id/expenseName"
+                tools:text="2 hours ago" />
 
-</com.google.android.material.card.MaterialCardView>
+            <ImageView
+                android:id="@+id/icon_time"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expenseName"
+                app:srcCompat="@drawable/ic_update"
+                android:contentDescription="@string/expenses_time" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

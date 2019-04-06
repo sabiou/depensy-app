@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BudgetManager</string>
+    <string name="app_name">Depensy</string>
 
     <string name="transaction">Transaction</string>
     <string name="budget">Budget</string>
@@ -13,24 +13,32 @@
     <string name="about">About</string>
     <string name="settings">Settings</string>
     <string name="expenses">Expenses</string>
+    <string name="add_expense">Add Expense</string>
 
-
-    <string name="add_a_new_expense">Add a new expense</string>
-    <string name="hint_expense_description">Description</string>
-    <string name="add_expense">Add expense</string>
-
-    <string name="enable_notifications">Enable notifications</string>
+    <string name="enable_notifications">notifications</string>
     <string name="build_version">Build version</string>
     <string name="notifications">Notifications</string>
 
     <string name="overview">Overview</string>
     <string name="stats">Stats</string>
-    <string name="info">Info</string>
+    <string name="info">App Info</string>
 
     <string name="total_spent_today">Total spent today</string>
     <string name="latest_expenses">Latest expenses</string>
     <string name="see_all">See All</string>
     <string name="home">Home</string>
+
+    <string name="description">Description</string>
     <string name="amount">Amount</string>
+    <string name="add_new_expense">Add new expense</string>
+    <string name="fcfa">FCFA</string>
+
+    <string name="history">History</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="add">Add</string>
+    <string name="filter">Filter</string>
+    <string name="refresh">Refresh</string>
+    <string name="expenses_time">the time the expense was made</string>
 
 </resources>

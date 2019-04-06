@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/notifications"
+        app:layout="@layout/custom_preference_category"
+        app:key="@string/notifications">
+
+        <SwitchPreferenceCompat
+            app:layout_width="wrap_content"
+            app:layout_height="wrap_content"
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:summaryOff="Notifications are disabled"
+            app:summaryOn="Notifications are enabled"
+            app:title="Receive notifications" />
+
+        <SwitchPreferenceCompat
+            app:layout_width="wrap_content"
+            app:layout_height="wrap_content"
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:summaryOff="Disabled"
+            app:summaryOn="Enabled"
+            app:title="Vibrate" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:layout="@layout/custom_preference_category"
+        app:iconSpaceReserved="false"
+        app:key="build"
+        app:title="Build version">
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

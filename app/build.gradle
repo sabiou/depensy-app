@@ -9,11 +9,12 @@ android {
     compileSdkVersion versions.compileSdk
 
     defaultConfig {
-        applicationId 'xyz.godi.budgetmanager'
+        applicationId 'dev.farouk.depensy'
         minSdkVersion versions.minSdk
         targetSdkVersion versions.targetSdk
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0-alpha00-(dev)"
+        multiDexEnabled = true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -37,36 +38,18 @@ android {
 
 dependencies {
     implementation deps.kotlin.stdlib
+    implementation project(':core')
     implementation project(':info')
 
+    implementation deps.androidX.core.ktx
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     kapt deps.androidX.lifecycle.compiler
     kapt deps.androidX.room.compiler
-    api deps.kotlin.stdlib
-    api deps.kotlin.coroutines.core
-    api deps.kotlin.coroutines.android
-    api deps.androidX.core.ktx
-    api deps.androidX.activity.ktx
-    api deps.androidX.fragment.ktx
-    api deps.androidX.constraintLayout
-    api deps.androidX.recyclerView
-    api deps.androidX.emoji.emoji
-    api deps.androidX.emoji.bundled
-    api deps.androidX.lifecycle.extensions
-    api deps.androidX.room.runtime
-    api deps.androidX.room.coroutines
-    api deps.androidX.paging.runtimeKtx
-    api deps.androidX.navigation.uiKtx
-    api deps.androidX.navigation.fragmentKtx
-    api deps.androidX.work.runtimeKtx
-    api deps.google.material
-    api deps.koin.koin
-    api deps.koin.viewModel
+    implementation deps.androidX.room.runtime
+    implementation deps.chart
+    implementation deps.dialogs
 
-    api deps.retrofit.retrofit
-    api deps.retrofit.gsonConverter
     testImplementation deps.jUnit
     androidTestImplementation deps.androidX.test.runner
-    androidTestImplementation deps.androidX.test.espresso.core
     annotationProcessor deps.androidX.lifecycle.compiler
 }

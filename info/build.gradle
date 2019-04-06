@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion versions.compileSdk
@@ -16,10 +17,15 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
+    implementation project(':core')
     implementation deps.androidX.browser
     implementation deps.google.ossLicenses.ossLicenses
+    implementation deps.dialogs
     testImplementation deps.jUnit
 }

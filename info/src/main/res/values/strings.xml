@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Info</string>
+    <string name="info">Info</string>
+    <string name="button_share_this_app">Share this app&#8230;</string>
+    <string name="button_open_source_licenses">Open source licenses</string>
+    <string name="title_share">Share %s</string>
+    <string name="subject_share">Get the %s app</string>
+    <string name="text_share">Manage your money.\n\nGet the %1$s app:\n%2$s</string>
+    <string name="Share">Share this app</string>
+    <string name="open_source_licenses">Open source licenses</string>
 </resources>

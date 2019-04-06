@@ -12,23 +12,34 @@
         <item name="android:colorBackground">@color/color_background</item>
         <item name="android:statusBarColor">@color/color_status_bar</item>
         <item name="android:navigationBarColor">@color/color_navigation_bar</item>
+
         <!-- Type attributes -->
         <item name="android:fontFamily">@font/rajdhani</item>
         <item name="fontFamily">@font/nunito_sans</item>
         <item name="textAppearanceHeadline6">@style/ExpenseManagerTextAppearance.Headline6</item>
         <item name="textAppearanceButton">@style/ExpenseManagerTextAppearance.Button</item>
+
         <!-- Shape attributes -->
         <item name="shapeAppearanceSmallComponent">@style/ExpenseManagerShapeAppearance.SmallComponent</item>
         <item name="shapeAppearanceMediumComponent">@style/ExpenseManagerShapeAppearance.MediumComponent</item>
         <item name="shapeAppearanceLargeComponent">@style/ExpenseManagerShapeAppearance.LargeComponent</item>
         <!-- Widget style attributes -->
         <item name="bottomNavigationStyle">@style/ExpenseManagerBottomNavigationView</item>
+
         <item name="textInputStyle">@style/ExpenseManagerTextInputLayout</item>
         <item name="materialCardViewStyle">@style/ExpenseManagerCardView</item>
         <item name="chipStyle">@style/ExpenseManagerChip</item>
         <item name="android:listDivider">@drawable/list_divider</item>
         <item name="android:progressBarStyle">@style/ExpenseManagerProgressBar</item>
         <item name="snackbarStyle">@style/ExpenseManagerSnackbar</item>
+    </style>
+
+    <style name="BottomNavActive">
+        <item name="android:fontFamily">@font/nunito_sans</item>
+    </style>
+
+    <style name="BottomNavInactive">
+        <item name="android:fontFamily">@font/nunito_sans</item>
     </style>
 
     <style name="ExpenseManagerTheme.Secondary">
@@ -41,7 +52,7 @@
         <item name="android:navigationBarColor">@color/color_navigation_bar_launcher</item>
     </style>
 
-    <style name="ExpenseManagerBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored" />
+    <style name="ExpenseManagerBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView" />
 
     <style name="ExpenseManagerTextAppearance.Headline6" parent="@style/TextAppearance.MaterialComponents.Headline6">
         <item name="android:textSize">@dimen/text_size_headline_6</item>
@@ -55,6 +66,12 @@
 
     <style name="ExpenseManagerTextAppearance.Chip" parent="TextAppearance.MaterialComponents.Chip">
         <item name="android:fontFamily">@font/rajdhani</item>
+    </style>
+
+    <style name="ExpenseManagerTextAppearance.Subheader.Accent" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/rajdhani</item>
+        <item name="android:fontFamily">@font/rajdhani</item>
+        <item name="android:textColor">?colorAccent</item>
     </style>
 
     <style name="ExpenseManagerMaterialButton.TextButton.DoublePadding" parent="Widget.MaterialComponents.Button.TextButton">
