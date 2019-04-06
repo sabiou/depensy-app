@@ -3,18 +3,22 @@ package dev.farouk.depensy.data
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.util.*
 
 @Entity(tableName = "expenses_table")
-data class Expense (
+data class Expense(
         @PrimaryKey(autoGenerate = true)
-        var expenseId: Long = 0L,
+        var expenseId: Int,
 
-        @ColumnInfo(name = "description_expense")
-        val description: String = "",
+        @ColumnInfo(name = "expense_value")
+        val value: Double,
 
-        @ColumnInfo(name = "expense_amount")
-        val amount: Int = 0,
+        @ColumnInfo(name = "expense_description")
+        val description: String,
 
-        @ColumnInfo(name = "date_and_time")
-        val dateAndTime: Long = System.currentTimeMillis()
+        @ColumnInfo(name = "expense_date")
+        val date: Date?,
+
+        @ColumnInfo(name = "expense_category")
+        val category: Category
 )
