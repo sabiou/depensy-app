@@ -13,6 +13,9 @@ data class Expense(
         @ColumnInfo(name = "expense_value")
         val value: Double,
 
+        @ColumnInfo(name = "expense_description")
+        val description: String,
+
         @ColumnInfo(name = "expense_date")
         val date: Date?,
 
