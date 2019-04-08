@@ -1,4 +1,4 @@
-package dev.farouk.depensy.info.viewmodel
+package dev.farouk.depensy.ui.info
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

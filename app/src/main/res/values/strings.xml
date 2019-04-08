@@ -10,7 +10,6 @@
     <string name="end_date">End date</string>
     <string name="name">Name</string>
     <string name="add_budget">Add budget</string>
-    <string name="about">About</string>
     <string name="settings">Settings</string>
     <string name="expenses">Expenses</string>
     <string name="add_expense">Add Expense</string>
@@ -21,7 +20,7 @@
 
     <string name="overview">Overview</string>
     <string name="stats">Stats</string>
-    <string name="info">App Info</string>
+    <string name="info">Info</string>
 
     <string name="total_spent_today">Total spent today</string>
     <string name="latest_expenses">Latest expenses</string>
@@ -44,5 +43,24 @@
     <string name="category">Category</string>
     <string name="expense_category">Expense category</string>
     <string name="enter_a_description">Enter a description</string>
+
+        <string name="button_share_this_app">Share this app&#8230;</string>
+        <string name="button_open_source_licenses">Open source licenses</string>
+        <string name="title_share">Share %s</string>
+        <string name="subject_share">Get the %s app</string>
+        <string name="text_share">Manage your money.\n\nGet the %1$s app:\n%2$s</string>
+        <string name="Share">Share this app</string>
+        <string name="open_source_licenses">Open source licenses</string>
+        <string name="about_title">Expense manager</string>
+        <string name="dismiss">Dismiss</string>
+        <string name="about_body"><![CDATA[
+        Designed &amp; developed by <b>Farouk Sabiou</b>.<br/>
+        <a href=\'https://twitter.com/sabiiou\'>Twitter</a>&nbsp;&nbsp;
+        <a href=\'https://github.com/sabiou\'>GitHub</a>&nbsp;&nbsp;
+        <a href=\'https://www.linkedin.com/in/farouksabiou\'>LinkedIn</a><br/><br/>
+        This project is <a href=\'https://github.com/sabiou/expense-manager\'>open source</a>, and is
+        licensed under Apache 2.0.
+  ]]></string>
+    <string name="about">About</string>
 
 </resources>

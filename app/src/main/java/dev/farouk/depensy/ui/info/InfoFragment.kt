@@ -1,4 +1,4 @@
-package dev.farouk.depensy.info.ui
+package dev.farouk.depensy.ui.info
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,11 +10,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
+import dev.farouk.depensy.R
 import dev.farouk.depensy.core.livedata.EventObserver
-import dev.farouk.depensy.info.R
-import dev.farouk.depensy.info.databinding.FragmentInfoBinding
-import dev.farouk.depensy.info.viewmodel.InfoViewModel
-import dev.farouk.depensy.info.viewmodel.InfoViewModelFactory
+import dev.farouk.depensy.databinding.FragmentInfoBinding
 import kotlinx.android.synthetic.main.fragment_info.*
 
 class InfoFragment : Fragment() {

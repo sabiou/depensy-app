@@ -44,7 +44,6 @@ androidExtensions {
 dependencies {
     implementation deps.kotlin.stdlib
     implementation project(':core')
-    implementation project(':info')
 
     implementation deps.androidX.core.ktx
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
@@ -53,6 +52,8 @@ dependencies {
     kapt deps.androidX.room.compiler
     implementation deps.androidX.room.runtime
     implementation deps.chart
+    implementation deps.androidX.browser
+    implementation deps.google.ossLicenses.ossLicenses
     implementation deps.dialogs
 
     testImplementation deps.jUnit
