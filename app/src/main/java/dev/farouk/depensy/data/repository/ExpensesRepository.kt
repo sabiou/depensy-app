@@ -1,6 +1,6 @@
 package dev.farouk.depensy.data.repository
 
-import dev.farouk.depensy.data.Expense
+import dev.farouk.depensy.data.models.Expense
 import dev.farouk.depensy.data.ExpenseDao
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

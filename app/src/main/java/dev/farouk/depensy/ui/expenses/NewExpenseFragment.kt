@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import com.google.android.material.snackbar.Snackbar
 import dev.farouk.depensy.R
-import dev.farouk.depensy.data.Expense
+import dev.farouk.depensy.data.models.Expense
 import dev.farouk.depensy.databinding.FragmentAddExpenseBinding
 import dev.farouk.depensy.factory.NewExpenseViewModelFactory
 import dev.farouk.depensy.utils.InjectorsUtils
@@ -38,9 +38,9 @@ class NewExpenseFragment : Fragment() {
         binding.lifecycleOwner = this
 
         binding.buttonAddNewExpense.setOnClickListener { view ->
-            val description = descriptionEdtxt.text.toString()
-            val amount = Integer.parseInt(amountEdtxt.text.toString())
-            val expense = Expense(description = description, amount = amount)
+            val description = expenseDescriptionEdt.text.toString()
+            val value = expenseValueEdt.text.toString().toDouble()
+            val expense = Expense(description = description, value = value, date = null, expenseId = 222)
             viewModel.addExpense(expense)
             // show snackbar
             Snackbar.make(view, "Expense $description added", Snackbar.LENGTH_SHORT).show()

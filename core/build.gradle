@@ -27,6 +27,7 @@ dependencies {
     api deps.kotlin.coroutines.core
     api deps.kotlin.coroutines.android
     api deps.androidX.core.ktx
+    api deps.androidX.appCompat
     api deps.androidX.activity.ktx
     api deps.androidX.fragment.ktx
     api deps.androidX.constraintLayout

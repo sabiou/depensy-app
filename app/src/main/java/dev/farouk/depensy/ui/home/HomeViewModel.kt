@@ -40,7 +40,7 @@ class HomeViewModel(application: Application, expensesDao: ExpenseDao): AndroidV
         _navigateToAddExpense.value = null
     }
 
-    // Executes when add expense button is cliked
+    // Executes when fragment_add_expense expense button is cliked
     fun goToAddExpense() {
         _navigateToAddExpense.value = true
     }

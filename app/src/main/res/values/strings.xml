@@ -29,7 +29,7 @@
     <string name="home">Home</string>
 
     <string name="description">Description</string>
-    <string name="amount">Amount</string>
+    <string name="value">Value</string>
     <string name="add_new_expense">Add new expense</string>
     <string name="fcfa">FCFA</string>
 
@@ -40,5 +40,9 @@
     <string name="filter">Filter</string>
     <string name="refresh">Refresh</string>
     <string name="expenses_time">the time the expense was made</string>
+    <string name="current_balance">Current balance</string>
+    <string name="category">Category</string>
+    <string name="expense_category">Expense category</string>
+    <string name="enter_a_description">Enter a description</string>
 
 </resources>

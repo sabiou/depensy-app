@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
@@ -46,13 +47,7 @@ class HomeFragment : Fragment() {
         // set the lifecycle owner
         binding.lifecycleOwner = this
 
-        binding.buttonSeeAllExpenses.setOnClickListener {
-            this.findNavController().navigate(
-                    HomeFragmentDirections.actionHomeFragmentToExpensesFragment()
-            )
-        }
-
-        binding.addExpenseFab.setOnClickListener {
+        binding.fab.setOnClickListener {
             this.findNavController().navigate(
                     HomeFragmentDirections.actionHomeFragmentToNewExpenseFragment()
             )

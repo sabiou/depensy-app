@@ -36,6 +36,11 @@ android {
     }
 }
 
+// for Parcelize uses
+androidExtensions {
+    experimental = true
+}
+
 dependencies {
     implementation deps.kotlin.stdlib
     implementation project(':core')
@@ -43,6 +48,7 @@ dependencies {
 
     implementation deps.androidX.core.ktx
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation deps.androidX.appCompat
     kapt deps.androidX.lifecycle.compiler
     kapt deps.androidX.room.compiler
     implementation deps.androidX.room.runtime
