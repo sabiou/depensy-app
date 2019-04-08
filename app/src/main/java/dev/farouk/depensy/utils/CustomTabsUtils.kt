@@ -1,4 +1,4 @@
-package dev.farouk.depensy.info
+package dev.farouk.depensy.utils
 
 import android.content.Context
 import android.net.Uri

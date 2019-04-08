@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/infoFragment"
-        android:name="dev.farouk.depensy.info.ui.InfoFragment"
+        android:name="dev.farouk.depensy.ui.info.InfoFragment"
         android:label="Info"
         tools:layout="@layout/fragment_info" />
     <fragment

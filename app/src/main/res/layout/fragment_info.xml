@@ -81,7 +81,7 @@
 
         <variable
             name="infoViewModel"
-            type="dev.farouk.depensy.info.viewmodel.InfoViewModel" />
+            type="dev.farouk.depensy.ui.info.InfoViewModel" />
     </data>
 
 </layout>

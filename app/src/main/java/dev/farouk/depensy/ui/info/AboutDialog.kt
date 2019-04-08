@@ -1,10 +1,10 @@
-package dev.farouk.depensy.info.ui
+package dev.farouk.depensy.ui.info
 
 import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import com.afollestad.materialdialogs.MaterialDialog
-import dev.farouk.depensy.info.R
+import dev.farouk.depensy.R
 
 class AboutDialog: DialogFragment() {
 
