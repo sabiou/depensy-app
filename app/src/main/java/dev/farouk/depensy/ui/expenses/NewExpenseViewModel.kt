@@ -2,7 +2,7 @@ package dev.farouk.depensy.ui.expenses
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dev.farouk.depensy.data.Expense
+import dev.farouk.depensy.data.models.Expense
 import dev.farouk.depensy.data.repository.ExpensesRepository
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.cancel
@@ -13,7 +13,7 @@ class NewExpenseViewModel(
 
     /**
      *  /**
-     * Execute when the add button is clicked
+     * Execute when the fragment_add_expense button is clicked
     */
      */
     fun addExpense(expense: Expense) {

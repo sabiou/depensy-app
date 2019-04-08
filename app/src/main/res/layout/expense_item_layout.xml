@@ -6,7 +6,7 @@
     <data>
         <variable
             name="expense"
-            type="dev.farouk.depensy.data.Expense" />
+            type="dev.farouk.depensy.data.models.Expense" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
@@ -48,7 +48,7 @@
                 android:layout_marginStart="80dp"
                 android:textAppearance="@style/ExpenseManagerTextAppearance.Headline6"
                 android:textColor="@color/white"
-                android:text="@{expense.amount}"
+                android:text="@{String.valueOf(expense.value)}"
                 app:layout_constraintStart_toEndOf="@+id/expenseName"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="600" />

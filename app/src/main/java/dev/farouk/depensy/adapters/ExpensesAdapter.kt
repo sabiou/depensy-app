@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import dev.farouk.depensy.data.Expense
+import dev.farouk.depensy.data.models.Expense
 import dev.farouk.depensy.databinding.ExpenseItemLayoutBinding
 
 class ExpensesAdapter: ListAdapter<Expense, ExpensesAdapter.ExpensesViewHolder>(ExpenseDiffCallback()) {

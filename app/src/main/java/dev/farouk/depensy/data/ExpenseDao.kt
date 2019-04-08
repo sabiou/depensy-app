@@ -2,6 +2,7 @@ package dev.farouk.depensy.data
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import dev.farouk.depensy.data.models.Expense
 
 /**
  * Defines methods for using the Expense class with Room.

@@ -4,12 +4,16 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
+import dev.farouk.depensy.data.models.Expense
 
 /**
  * A database that stores Expense information.
  * And a global method to get access to the database.
  */
 @Database(entities = [Expense::class], version = 1, exportSchema = false)
+
+@TypeConverters(Converters::class)
 abstract class ExpenseDatabase: RoomDatabase() {
     /**
      * Connect our database to the DAO
@@ -17,7 +21,7 @@ abstract class ExpenseDatabase: RoomDatabase() {
     abstract fun expenseDao(): ExpenseDao
 
     /**
-     * Define a companion object, this allows us to add functions on the ExpenseDatabase class.
+     * Define a companion object, this allows us to fragment_add_expense functions on the ExpenseDatabase class.
      *
      * For example, clients can call `ExpenseDatabase.getInstance(context)` to instantiate
      * a new ExpenseDatabase
