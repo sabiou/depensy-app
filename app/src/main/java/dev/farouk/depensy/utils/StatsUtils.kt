@@ -1,4 +1,4 @@
-package dev.farouk.depensy.core.util
+package dev.farouk.depensy.utils
 
 object StatsUtils {
 

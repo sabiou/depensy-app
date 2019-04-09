@@ -1,4 +1,4 @@
-package dev.farouk.depensy.core.livedata
+package dev.farouk.depensy.utils
 
 import androidx.lifecycle.Observer
 
@@ -8,8 +8,8 @@ import androidx.lifecycle.Observer
  *
  * [onEventUnhandledContent] is *only* called if the [Event]'s contents has not been handled.
  */
-class EventObserver<T>(private val onEventUnhandledContent: (T) -> Unit) : Observer<Event<T>> {
-    override fun onChanged(event: Event<T>?) {
+class EventObserver<T>(private val onEventUnhandledContent: (T) -> Unit) : Observer<dev.farouk.depensy.utils.Event<T>> {
+    override fun onChanged(event: dev.farouk.depensy.utils.Event<T>?) {
         event?.getContentIfNotHandled()?.let { value ->
             onEventUnhandledContent(value)
         }

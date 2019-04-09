@@ -1,9 +1,8 @@
-package dev.farouk.depensy.core.viewmodel
+package dev.farouk.depensy.utils
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import dev.farouk.depensy.core.livedata.Event
 
 open class ReselectViewModel : ViewModel() {
     private val _navigateReselect = MutableLiveData<Event<Any>>()
