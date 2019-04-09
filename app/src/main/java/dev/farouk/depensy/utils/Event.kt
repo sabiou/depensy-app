@@ -1,4 +1,4 @@
-package dev.farouk.depensy.core.livedata
+package dev.farouk.depensy.utils
 
 
 /**

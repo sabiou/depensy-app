@@ -131,7 +131,7 @@
             android:minHeight="60dp"
             android:backgroundTint="@color/color_secondary"
             android:text="@string/add"
-            app:rippleColor="@color/colorPrimary"/>
+            app:rippleColor="@color/color_primary"/>
 
     </LinearLayout>
     

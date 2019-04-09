@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#00796b</color>
-    <color name="colorPrimaryDark">#004c40</color>
-    <color name="colorPrimaryLight">#4DB6AC</color>
-    <color name="primaryTextColor">#FFFFFF</color>
+    <color name="color_primary">@color/expense_manager_green</color>
+    <color name="color_primary_variant_light">@color/expense_manager_green_light</color>
+    <color name="color_primary_variant_dark">@color/expense_manager_green_dark</color>
+    <color name="color_on_primary">@color/white</color>
+    <color name="color_secondary">@color/expense_manager_blue</color>
+    <color name="color_secondary_variant_light">@color/expense_manager_blue_light</color>
+    <color name="color_secondary_variant_dark">@color/expense_manager_blue_dark</color>
+    <color name="color_on_secondary">@color/white</color>
+    <color name="color_error">@color/expense_manager_red</color>
+    <color name="color_background">@color/white</color>
+    <color name="color_status_bar">@color/black_alpha_30</color>
+    <color name="color_navigation_bar">@color/color_primary_variant_dark</color>
+    <color name="color_navigation_bar_launcher">@color/black_alpha_30</color>
+    <color name="color_border">@color/medium_grey</color>
+    <color name="color_progress_bar">@color/grey</color>
+
+    <integer-array name="colors_swipe_refresh">
+        <item>@color/expense_manager_green_light</item>
+        <item>@color/expense_manager_green</item>
+        <item>@color/expense_manager_green_dark</item>
+        <item>@color/expense_manager_blue_light</item>
+        <item>@color/expense_manager_blue</item>
+        <item>@color/expense_manager_blue_dark</item>
+    </integer-array>
+
+    <color name="expense_manager_green">#2d8626</color>
+    <color name="expense_manager_green_light">#61b754</color>
+    <color name="expense_manager_green_dark">#005800</color>
+    <color name="expense_manager_blue">#2a3c81</color>
+    <color name="expense_manager_blue_light">#5c66b1</color>
+    <color name="expense_manager_blue_dark">#001754</color>
+    <color name="expense_manager_red">#E51A19</color>
+    <color name="white">#ffffff</color>
+    <color name="black_alpha_30">#4d000000</color>
+    <color name="dark_grey">#666666</color>
+    <color name="grey">#e3e4e7</color>
+    <color name="medium_grey">#ecf0f3</color>
+    <color name="light_grey">#f6f7f8</color>
 </resources>

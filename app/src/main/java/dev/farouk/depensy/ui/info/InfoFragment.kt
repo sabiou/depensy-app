@@ -11,8 +11,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
 import dev.farouk.depensy.R
-import dev.farouk.depensy.core.livedata.EventObserver
 import dev.farouk.depensy.databinding.FragmentInfoBinding
+import dev.farouk.depensy.utils.EventObserver
 import kotlinx.android.synthetic.main.fragment_info.*
 
 class InfoFragment : Fragment() {
@@ -45,7 +45,7 @@ class InfoFragment : Fragment() {
 
     private fun setupViewModel() {
         viewModel.navigateReselect.observe(this, EventObserver {
-            infoScrollView.smoothScrollTo(0,0)
+            infoScrollView.smoothScrollTo(0, 0)
             appBarLayout.setExpanded(true)
         })
     }

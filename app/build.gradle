@@ -43,18 +43,33 @@ androidExtensions {
 
 dependencies {
     implementation deps.kotlin.stdlib
-    implementation project(':core')
-
-    implementation deps.androidX.core.ktx
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation deps.androidX.appCompat
     kapt deps.androidX.lifecycle.compiler
     kapt deps.androidX.room.compiler
     implementation deps.androidX.room.runtime
-    implementation deps.chart
     implementation deps.androidX.browser
     implementation deps.google.ossLicenses.ossLicenses
     implementation deps.dialogs
+
+    implementation deps.kotlin.coroutines.core
+    implementation deps.kotlin.coroutines.android
+    implementation deps.androidX.core.ktx
+    implementation deps.androidX.appCompat
+    implementation deps.androidX.activity.ktx
+    implementation deps.androidX.fragment.ktx
+    implementation deps.androidX.constraintLayout
+    implementation deps.androidX.recyclerView
+    implementation deps.androidX.emoji.emoji
+    implementation deps.androidX.emoji.bundled
+    implementation deps.androidX.lifecycle.extensions
+    implementation deps.androidX.room.coroutines
+    implementation deps.androidX.paging.runtimeKtx
+    implementation deps.androidX.navigation.uiKtx
+    implementation deps.androidX.navigation.fragmentKtx
+    implementation deps.androidX.work.runtimeKtx
+    implementation deps.google.material
+    implementation deps.chart
 
     testImplementation deps.jUnit
     androidTestImplementation deps.androidX.test.runner
