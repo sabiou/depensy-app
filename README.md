@@ -11,6 +11,12 @@
 
 Depensy :moneybag: is a work-in progress simple budget management app - features latest android technologies.
 
+### Features lists version v.1.0-alpha01
+- [ ] User authentitication
+- [ ] User add expense
+- [ ] User track his expenses with a detailed history
+- [ ] Statistics screen with charts
+
 ### Architecture
 This app is build following the diagram bellow. To learn more about this [architecture](https://developer.android.com/jetpack/docs/guide#separation-of-concerns)
 
