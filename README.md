@@ -13,8 +13,8 @@ Depensy :moneybag: is a work-in progress simple budget management app - features
 
 ### Features lists version v.1.0-alpha01
 - [ ] User authentitication
-- [ ] User add expense
-- [ ] User track his expenses with a detailed history
+- [ ] Add new expense
+- [ ] Track expenses with a detailed history
 - [ ] Statistics screen with charts
 
 ### Architecture
