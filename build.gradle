@@ -18,12 +18,12 @@ buildscript {
             androidChart: 'v3.1.0',
 
             androidX: [
-                    appCompat: '1.1.0-alpha04',
-                    core: '1.1.0-alpha04',
+                    appCompat: '1.1.0-rc01',
+                    core: '1.2.0-alpha02',
                     activity: '1.0.0-alpha04',
-                    fragment: '1.1.0-alpha03',
-                    constraintLayout: '2.0.0-alpha3',
-                    recyclerView: '1.1.0-alpha02',
+                    fragment: '1.2.0-alpha01',
+                    constraintLayout: '2.0.0-beta2',
+                    recyclerView: '1.1.0-beta01',
                     emoji: '1.0.0',
                     browser: '1.0.0',
                     lifecycle: '2.1.0-alpha02',
@@ -32,17 +32,17 @@ buildscript {
                     preference: '1.0.0',
                     cardView: '1.0.0',
                     navigation: '2.1.0-alpha06',
-                    work: '1.0.0-beta03',
+                    work: '2.1.0',
                     test: [
                             runner: '1.1.2-alpha01',
                             espresso: '3.1.2-alpha01'
                     ]
             ],
             google: [
-                    material: '1.1.0-alpha04',
+                    material: '1.1.0-alpha08',
                     ossLicenses: [
-                            ossLicenses: '16.0.2',
-                            gradlePlugin: '0.9.4'
+                            ossLicenses: '17.0.0',
+                            gradlePlugin: '0.9.5'
                     ]
             ],
     ]
