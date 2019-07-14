@@ -31,7 +31,7 @@ buildscript {
                     paging: '2.1.0',
                     preference: '1.0.0',
                     cardView: '1.0.0',
-                    navigation: '2.1.0-alpha01',
+                    navigation: '2.1.0-alpha06',
                     work: '1.0.0-beta03',
                     test: [
                             runner: '1.1.2-alpha01',
