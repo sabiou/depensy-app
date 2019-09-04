@@ -47,7 +47,6 @@ dependencies {
     implementation deps.androidX.appCompat
     kapt deps.androidX.lifecycle.compiler
     kapt deps.androidX.room.compiler
-    implementation deps.androidX.room.runtime
     implementation deps.androidX.browser
     implementation deps.google.ossLicenses.ossLicenses
     implementation deps.dialogs
@@ -63,11 +62,9 @@ dependencies {
     implementation deps.androidX.emoji.emoji
     implementation deps.androidX.emoji.bundled
     implementation deps.androidX.lifecycle.extensions
-    implementation deps.androidX.room.coroutines
     implementation deps.androidX.paging.runtimeKtx
     implementation deps.androidX.navigation.uiKtx
     implementation deps.androidX.navigation.fragmentKtx
-    implementation deps.androidX.work.runtimeKtx
     implementation deps.google.material
     implementation deps.chart
 
