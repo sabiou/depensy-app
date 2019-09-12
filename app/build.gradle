@@ -68,6 +68,11 @@ dependencies {
     implementation deps.google.material
     implementation deps.chart
 
+    implementation deps.firebase.core
+    implementation deps.firebase.auth
+    implementation deps.firebase.messaging
+    implementation deps.firebase.database
+
     testImplementation deps.jUnit
     androidTestImplementation deps.androidX.test.runner
     annotationProcessor deps.androidX.lifecycle.compiler
