@@ -15,6 +15,13 @@ ext {
             materialDialogs    : '2.1.0',
             androidChart       : 'v3.1.0',
 
+            firebase :[
+                    core: '17.0.0',
+                    auth: '18.0.0',
+                    messaging: '19.0.1',
+                    database: '18.0.0'
+            ],
+
             androidX           : [
                     appCompat       : '1.1.0-rc01',
                     core            : '1.2.0-alpha02',
@@ -58,6 +65,13 @@ ext {
                             core   : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.kotlin.coroutines",
                             android: "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.kotlin.coroutines"
                     ]
+            ],
+
+            firebase :[
+                    core: "com.google.firebase:firebase-core:$versions.firebase.core",
+                    auth: "com.google.firebase:firebase-auth:$versions.firebase.auth",
+                    messaging: "com.google.firebase:firebase-messaging:$versions.firebase.messaging",
+                    database: "com.google.firebase:firebase-database:$versions.firebase.database"
             ],
             androidX           : [
                     appCompat       : "androidx.appcompat:appcompat:$versions.appCompat",
