@@ -55,6 +55,7 @@ dependencies {
     implementation deps.kotlin.coroutines.android
     implementation deps.androidX.core.ktx
     implementation deps.androidX.appCompat
+    implementation deps.androidX.room.runtime
     implementation deps.androidX.activity.ktx
     implementation deps.androidX.fragment.ktx
     implementation deps.androidX.constraintLayout
