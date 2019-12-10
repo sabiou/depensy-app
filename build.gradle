@@ -2,6 +2,9 @@
 
 buildscript {
     apply from: 'dependencies.gradle'
+    ext {
+        kotlin_version = '1.3.60'
+    }
     repositories {
         google()
         jcenter()
@@ -12,6 +15,7 @@ buildscript {
         classpath deps.kotlin.gradlePlugin
         classpath deps.androidX.navigation.safeArgsGradlePlugin
         classpath deps.google.ossLicenses.gradlePlugin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 

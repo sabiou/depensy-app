@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion versions.compileSdk
+
+    defaultConfig {
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+}
+
+dependencies {
+    api deps.kotlin.stdlib
+    api deps.kotlin.coroutines.core
+    api deps.kotlin.coroutines.android
+    api deps.androidX.core.ktx
+    api deps.androidX.activity.ktx
+    api deps.androidX.fragment.ktx
+    api deps.androidX.appCompat
+    api deps.androidX.constraintLayout
+    api deps.androidX.recyclerView
+    api deps.androidX.emoji
+    api deps.androidX.lifecycle.extensions
+    api deps.androidX.room.runtime
+    api deps.androidX.room.ktx
+    api deps.androidX.paging.runtimeKtx
+    api deps.androidX.navigation.uiKtx
+    api deps.androidX.navigation.fragmentKtx
+    api deps.google.material
+    api deps.square.retrofit.retrofit
+    api deps.square.retrofit.gsonConverter
+    api deps.coil
+    testImplementation deps.androidX.test.jUnit.ktx
+    androidTestImplementation deps.androidX.test.core.ktx
+    androidTestImplementation deps.androidX.test.jUnit.ktx
+    androidTestImplementation deps.androidX.test.runner
+}
