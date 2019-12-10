@@ -6,7 +6,7 @@ import dagger.Module
 
 /**
  * Module used to define the connection between the framework's [ViewModelProvider.Factory] and
- * our own implementation: [IOSchedViewModelFactory].
+ * our own implementation: [DepensyViewModelFactory].
  */
 @Module
 @Suppress("UNUSED")
