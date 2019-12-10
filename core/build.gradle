@@ -40,6 +40,9 @@ dependencies {
     api deps.androidX.navigation.uiKtx
     api deps.androidX.navigation.fragmentKtx
     api deps.google.material
+    api deps.google.dagger.dagger
+    api deps.google.dagger.android
+    api deps.google.dagger.androidSupport
     api deps.square.retrofit.retrofit
     api deps.square.retrofit.gsonConverter
     api deps.coil
