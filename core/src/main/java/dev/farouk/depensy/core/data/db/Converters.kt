@@ -1,4 +1,4 @@
-package dev.farouk.depensy.data
+package dev.farouk.depensy.core.data.db
 
 import androidx.room.TypeConverter
 import java.util.*
