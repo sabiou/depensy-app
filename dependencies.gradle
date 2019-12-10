@@ -132,6 +132,13 @@ ext {
             ],
             google             : [
                     material   : "com.google.android.material:material:$versions.google.material",
+                    dagger: [
+                              dagger: "com.google.dagger:dagger:$versions.google.dagger",
+                              compiler: "com.google.dagger:dagger-compiler:$versions.google.dagger",
+                              android: "com.google.dagger:dagger-android:$versions.google.dagger",
+                              androidSupport: "com.google.dagger:dagger-android-support:$versions.google.dagger",
+                              androidProcessor: "com.google.dagger:dagger-android-processor:$versions.google.dagger"
+                             ],
                     ossLicenses: [
                             ossLicenses : "com.google.android.gms:play-services-oss-licenses:$versions.google.ossLicenses.ossLicenses",
                             gradlePlugin: "com.google.android.gms:oss-licenses-plugin:$versions.google.ossLicenses.gradlePlugin"
