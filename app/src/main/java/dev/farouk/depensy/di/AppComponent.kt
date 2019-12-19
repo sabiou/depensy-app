@@ -13,10 +13,12 @@ import javax.inject.Singleton
         modules = [
             AndroidSupportInjectionModule::class,
             AppModule::class,
+            ActivityBindingModule::class,
             ViewModelModule::class]
 )
 
 interface AppComponent: AndroidInjector<DepensyApplication> {
+
     @Component.Factory
     interface Factory {
         fun create(@BindsInstance application: DepensyApplication): AppComponent
