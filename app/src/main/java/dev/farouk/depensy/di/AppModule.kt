@@ -1,6 +1,5 @@
 package dev.farouk.depensy.di
 
-import android.app.Application
 import android.content.Context
 import dagger.Module
 import dagger.Provides
@@ -17,4 +16,5 @@ class AppModule  {
 
     @Provides
     fun providesAppDatabase(context: Context): ExpenseDatabase = ExpenseDatabase.buildDatabase(context)
+
 }
