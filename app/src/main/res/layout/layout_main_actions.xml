@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="2dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_actions_size"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_16dp"
+            android:paddingRight="@dimen/margin_16dp">
+
+            <LinearLayout
+                android:id="@+id/layoutVault"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/item_main_action_size"
+                    android:layout_height="@dimen/item_main_action_size"
+                    android:background="@drawable/bg_actions">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/item_main_action_image_size"
+                        android:layout_height="@dimen/item_main_action_image_size"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/ic_payment" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:singleLine="true"
+                    android:text="@string/title_main_pay_bill"
+                    android:textColor="@color/color_primary"
+                    android:textSize="@dimen/text_size_regular" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutCallBlocker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/item_main_action_size"
+                    android:layout_height="@dimen/item_main_action_size"
+                    android:background="@drawable/bg_actions">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/item_main_action_image_size"
+                        android:layout_height="@dimen/item_main_action_image_size"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/ic_bank" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:singleLine="true"
+                    android:text="@string/bank_tranfer"
+                    android:textColor="@color/color_primary"
+                    android:textSize="@dimen/text_size_regular" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutBrowser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/item_main_action_size"
+                    android:layout_height="@dimen/item_main_action_size"
+                    android:background="@drawable/bg_actions">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/item_main_action_image_size"
+                        android:layout_height="@dimen/item_main_action_image_size"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/ic_smartphone_24" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:singleLine="true"
+                    android:text="@string/deposit"
+                    android:textColor="@color/color_primary"
+                    android:textSize="@dimen/text_size_regular" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/item_main_action_size"
+                    android:layout_height="@dimen/item_main_action_size"
+                    android:background="@drawable/bg_actions">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/item_main_action_image_size"
+                        android:layout_height="@dimen/item_main_action_image_size"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/ic_send_24" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:singleLine="true"
+                    android:text="@string/send"
+                    android:textColor="@color/color_primary"
+                    android:textSize="@dimen/text_size_regular" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
