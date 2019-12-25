@@ -23,7 +23,7 @@
             android:paddingRight="@dimen/margin_16dp">
 
             <LinearLayout
-                android:id="@+id/layoutVault"
+                android:id="@+id/layoutBill"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -61,7 +61,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/layoutCallBlocker"
+                android:id="@+id/layoutBank"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -99,7 +99,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/layoutBrowser"
+                android:id="@+id/layoutMobile"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -137,7 +137,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/layoutTheme"
+                android:id="@+id/layoutSend"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
