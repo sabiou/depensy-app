@@ -43,5 +43,27 @@
     <dimen name="text_size_expense_date_header_day_month">@dimen/text_size_headline_6</dimen>
     <dimen name="text_size_expense_date_header_year">12sp</dimen>
 
+    <!-- Spacing -->
+    <dimen name="spacing_small">4dp</dimen>
+    <dimen name="spacing_normal">8dp</dimen>
+    <dimen name="spacing_big">12dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xlarge">24dp</dimen>
+    <dimen name="spacing_xxlarge">48dp</dimen>
+
+    <dimen name="divider">0.5dp</dimen>
+
+    <dimen name="chip_height">32dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="main_actions_size">108dp</dimen>
+    <dimen name="item_main_action_size">56dp</dimen>
+    <dimen name="item_main_action_image_size">24dp</dimen>
+    <dimen name="text_size_regular">16sp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="header_height">160dp</dimen>
+    <dimen name="header_vertical_spacing">8dp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
 
 </resources>
