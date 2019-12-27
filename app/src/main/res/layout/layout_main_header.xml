@@ -8,43 +8,46 @@
     android:gravity="bottom"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textView3"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/header_vertical_spacing"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="80dp"
-        tools:text="Total spent today" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/header_vertical_spacing"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="111dp"
-        tools:text="XAF 17,500" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/amount_spent_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/header_vertical_spacing"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="Total spent today" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imageView"
-        android:layout_width="50dp"
-        app:srcCompat="@drawable/ic_notifications_24"
-        tools:layout_editor_absoluteX="379dp"
-        tools:layout_editor_absoluteY="8dp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/amount_spent_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/header_vertical_spacing"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            tools:text="XAF 17,500" />
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Hello, Farouk"
+        android:layout_marginStart="8dp"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="50dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Hello, Farouk" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
