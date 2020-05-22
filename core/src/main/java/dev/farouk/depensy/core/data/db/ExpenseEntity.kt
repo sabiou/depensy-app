@@ -1,12 +1,11 @@
-package dev.farouk.depensy.data.room
+package dev.farouk.depensy.core.data.db
 
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+import android.os.Build
+import androidx.annotation.RequiresApi
+import androidx.room.*
+import dev.farouk.depensy.core.util.extensions.getCurrentTimestamp
 import dev.farouk.depensy.core.util.extensions.toExactDouble
 import dev.farouk.depensy.core.util.extensions.toExactFloat
-import dev.farouk.depensy.data.models.Expense
-import dev.farouk.depensy.utils.getCurrentTimestamp
 import org.threeten.bp.LocalDate
 
 /**
@@ -35,6 +34,7 @@ data class ExpenseEntity(
 
     companion object {
 
+        @RequiresApi(Build.VERSION_CODES.O)
         fun prepareForInsertion(expense: Expense) =
                 ExpenseEntity(
                         id = 0,
