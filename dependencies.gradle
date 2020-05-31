@@ -14,6 +14,7 @@ ext {
             materialDialogs    : '2.1.0',
             androidChart       : 'v3.1.0',
             coil               : '0.8.0',
+            dotindicators   : '4.1.2',
 
             firebase           : [
                     core     : '17.0.0',
@@ -37,7 +38,6 @@ ext {
                     preference      : '1.0.0',
                     cardView        : '1.0.0',
                     navigation      : '2.1.0-alpha06',
-                    work            : '2.3.0-alpha01',
                     test            : [
                             core: '1.2.1-alpha02',
                             jUnit: '1.1.2-alpha02',
@@ -60,6 +60,8 @@ ext {
     deps = [
             androidGradlePlugin: "com.android.tools.build:gradle:$versions.androidGradlePlugin",
             jUnit              : "junit:junit:$versions.jUnit",
+            threeten           : "com.jakewharton.threetenabp:threetenabp:1.2.4",
+            dots           : "com.tbuonomo.andrui:viewpagerdotsindicator:$versions.dotindicators",
             ktlint             : "com.github.shyiko:ktlint:$versions.ktlint",
             coil               : "io.coil-kt:coil:$versions.coil",
             dialogs            : "com.afollestad.material-dialogs:core:$versions.materialDialogs",
@@ -115,9 +117,6 @@ ext {
                             uiKtx               : "androidx.navigation:navigation-ui-ktx:$versions.androidX.navigation",
                             fragmentKtx         : "androidx.navigation:navigation-fragment-ktx:$versions.androidX.navigation",
                             safeArgsGradlePlugin: "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.androidX.navigation"
-                    ],
-                    work            : [
-                            runtimeKtx: "android.arch.work:work-runtime-ktx:$versions.androidX.work"
                     ],
                     test: [
                             runner: "androidx.test:runner:$versions.androidX.test.runner",

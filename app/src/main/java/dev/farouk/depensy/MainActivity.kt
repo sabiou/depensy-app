@@ -1,6 +1,7 @@
 package dev.farouk.depensy
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
@@ -18,6 +19,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupBottomNavigation() {
         val navController = findNavController(R.id.navHostFragment)
+            navController.addOnDestinationChangedListener { _, destination, _ ->
+                when(destination.id) {
+                    R.id.onBoardingFragment -> bottomNav.visibility = View.INVISIBLE
+                    else -> bottomNav.visibility = View.VISIBLE
+                }
+            }
         bottomNav.setupWithNavController(navController)
     }
 

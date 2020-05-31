@@ -42,18 +42,29 @@
     <string name="current_balance">Current balance</string>
     <string name="category">Category</string>
     <string name="expense_category">Expense category</string>
-    <string name="enter_a_description">Enter a description</string>
 
-        <string name="button_share_this_app">Share this app&#8230;</string>
-        <string name="button_open_source_licenses">Open source licenses</string>
-        <string name="title_share">Share %s</string>
-        <string name="subject_share">Get the %s app</string>
-        <string name="text_share">Manage your money.\n\nGet the %1$s app:\n%2$s</string>
-        <string name="Share">Share this app</string>
-        <string name="open_source_licenses">Open source licenses</string>
-        <string name="about_title">Expense manager</string>
-        <string name="dismiss">Dismiss</string>
-        <string name="about_body"><![CDATA[
+    <string name="onboarding_slide1_title">Welcome</string>
+    <string name="onboarding_slide2_title">Welcome</string>
+    <string name="onboarding_slide3_title">Welcome</string>
+
+    <string name="onboarding_slide1_subtitle">Control your money</string>
+    <string name="onboarding_slide2_subtitle">Balance your income and expenses</string>
+    <string name="onboarding_slide3_subtitle">Achieve your financial goals</string>
+
+    <string name="onboarding_slide1_desc">Seamlessly and intuitively track your spending in one place</string>
+    <string name="onboarding_slide2_desc">Get a 360 view on your money; what comes in, what goes out.</string>
+    <string name="onboarding_slide3_desc">Depensy empower you to set and achieve financial goals. </string>
+
+    <string name="button_share_this_app">Share this app&#8230;</string>
+    <string name="button_open_source_licenses">Open source licenses</string>
+    <string name="title_share">Share %s</string>
+    <string name="subject_share">Get the %s app</string>
+    <string name="text_share">Manage your money.\n\nGet the %1$s app:\n%2$s</string>
+    <string name="Share">Share this app</string>
+    <string name="open_source_licenses">Open source licenses</string>
+    <string name="about_title">Expense manager</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="about_body"><![CDATA[
         Designed &amp; developed by <b>Farouk Sabiou</b>.<br/>
         <a href=\'https://twitter.com/sabiiou\'>Twitter</a>&nbsp;&nbsp;
         <a href=\'https://github.com/sabiou\'>GitHub</a>&nbsp;&nbsp;
@@ -62,5 +73,7 @@
         licensed under Apache 2.0.
   ]]></string>
     <string name="about">About</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

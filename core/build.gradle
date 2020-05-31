@@ -46,6 +46,8 @@ dependencies {
     api deps.square.retrofit.retrofit
     api deps.square.retrofit.gsonConverter
     api deps.coil
+    api deps.threeten
+    api deps.dots
     testImplementation deps.androidX.test.jUnit.ktx
     androidTestImplementation deps.androidX.test.core.ktx
     androidTestImplementation deps.androidX.test.jUnit.ktx

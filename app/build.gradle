@@ -1,9 +1,11 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'androidx.navigation.safeargs.kotlin'
-apply plugin: 'com.google.android.gms.oss-licenses-plugin'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.android.gms.oss-licenses-plugin'
+}
 
 android {
     compileSdkVersion versions.compileSdk
@@ -45,10 +47,18 @@ androidExtensions {
 }
 
 dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation project(':core')
 
     kapt deps.androidX.lifecycle.compiler
     kapt deps.androidX.room.compiler
+
+    kapt deps.google.dagger.compiler
+    kapt deps.google.dagger.android
+    api deps.google.dagger.dagger
+    api deps.google.dagger.androidSupport
+
+    api deps.dialogs
 
     testImplementation deps.jUnit
     androidTestImplementation deps.androidX.test.runner
