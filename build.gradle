@@ -1,5 +1,5 @@
 buildscript {
-    apply from: 'dependencies.gradle'
+    apply from: 'deps.gradle'
     ext {
         kotlin_version = '1.3.60'
     }
@@ -13,7 +13,8 @@ buildscript {
         classpath deps.kotlin.gradlePlugin
         classpath deps.androidX.navigation.safeArgsGradlePlugin
         classpath deps.google.ossLicenses.gradlePlugin
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath deps.androidX.hilt.gradlePlugin
+
     }
 }
 
